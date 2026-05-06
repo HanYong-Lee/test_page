@@ -1830,8 +1830,8 @@ span[style*="color: #ffffff"] {
 
 .promo-popup__poster img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 80%;
 }
 
 .promo-popup__close {
