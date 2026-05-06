@@ -1878,6 +1878,11 @@ span[style*="color: #ffffff"] {
   animation: bounceFloat 1.8s ease-in-out infinite;
 }
 
+.floating-quick__btn--message {
+  background: linear-gradient(180deg, #fee500 0%, #f7d900 100%);
+  color: #181600;
+}
+
 .floating-quick__btn--nearby {
   background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
 }
