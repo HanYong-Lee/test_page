@@ -10,34 +10,6 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="SKT 티원모바일" />
   <meta name="theme-color" content="#2563eb" />
-  
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-  <script>
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-  
-    OneSignalDeferred.push(async function(OneSignal) {
-      await OneSignal.init({
-        appId: "76032fee-3855-4a3d-930f-83f798d22942",
-        serviceWorkerPath: "OneSignalSDKWorker.js",
-        serviceWorkerParam: {
-          scope: "/tonemobile/"
-        },
-  
-        notifyButton: {
-          enable: true,
-        },
-  
-        safari_web_id: "web.onesignal.auto.xxxxx",
-  
-        promptOptions: {
-          slidedown: {
-            enabled: true,
-            autoPrompt: true
-          }
-        }
-      });
-    });
-  </script>
 </head>
 <body>
   <header class="site-header">
