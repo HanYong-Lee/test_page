@@ -930,3 +930,16 @@ function animateVisitorCount(target) {
 
   requestAnimationFrame(step);
 }
+
+/* =========================
+   카카오 문의 버튼
+========================= */
+
+const floatingMessageBtn = document.getElementById('floatingMessageBtn');
+
+floatingMessageBtn?.addEventListener('click', () => {
+  window.open(
+    'https://pf.kakao.com/_VRvxbX',
+    '_blank'
+  );
+});
