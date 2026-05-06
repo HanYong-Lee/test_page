@@ -1875,6 +1875,10 @@ span[style*="color: #ffffff"] {
   justify-content: center;
 }
 
+.promo-popup__poster a {
+  display: block;
+}
+
 .promo-popup__close:hover {
   background: rgba(17, 24, 39, 0.96);
 }
