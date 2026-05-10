@@ -16,7 +16,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/nj35pauscpaq/",
     naverUrl: "https://naver.me/Glmu4Q66",
-    kakaoUrl: 
+    kakaoUrl: ""
   },
   {
     name: "용문점",
@@ -80,7 +80,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
-    kakaoUrl: 
+    kakaoUrl: ""
   },
   {
     name: "아산세교점",
