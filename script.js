@@ -16,7 +16,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/nj35pauscpaq/",
     naverUrl: "https://naver.me/Glmu4Q66",
-    kakaoUrl: "https://open.kakao.com/o/sfLlCoag"
+    kakaoUrl: 
   },
   {
     name: "용문점",
@@ -43,10 +43,10 @@ const stores = [
     points: ["유료주차장 이용 가능(2시간 지원)"],
     phone: "0507-1319-5033",
     mapUrl: "https://naver.me/5ZjdrJ3Q",
-    review: "다른 곳에서 상담 받고 오셔도 된다고 해서 의아했는데, 진짜 여기보다 싸게 파는 곳이 없더라구요 😍",
+    review: "다른 곳에서 상담 받고 오셔도 된다고 해서 의아했는데, 진짜 여기보다 싸게 파는 곳이 없더라구요!",
     meta: "30대 남 / 갤럭시 프리미엄 매니아",
 
-    carrotUrl: "",
+    carrotUrl: "https://www.daangn.com/kr/local-profile/5wc4p38gfuoy/",
     naverUrl: "https://naver.me/5ZjdrJ3Q",
     kakaoUrl: ""
   },
@@ -59,10 +59,10 @@ const stores = [
     points: ["건물 주차장 이용 가능(2시간 지원)"],
     phone: "043-233-3010",
     mapUrl: "https://naver.me/xUwgrDjt",
-    review: "-",
-    meta: "-",
+    review: "대리점이 이렇게 싸게 팔길래 설마 했는데, 진짜 갤럭시 S26 무료로 개통했어요. 점장님 너무 친절하십니다!",
+    meta: "30대 여 / 당근 문의 고객",
 
-    carrotUrl: "",
+    carrotUrl: "https://www.daangn.com/kr/local-profile/bo2se7i65gii/",
     naverUrl: "https://naver.me/xUwgrDjt",
     kakaoUrl: ""
   },
@@ -80,7 +80,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
-    kakaoUrl: "https://open.kakao.com/o/gaP6InWh"
+    kakaoUrl: 
   },
   {
     name: "아산세교점",
