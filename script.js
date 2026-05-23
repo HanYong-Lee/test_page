@@ -16,7 +16,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/nj35pauscpaq/",
     naverUrl: "https://naver.me/Glmu4Q66",
-    kakaoUrl: ""
+    kakaoUrl: "https://tworldfriends.co.kr/D634190000/subscribers/create"
   },
   {
     name: "용문점",
@@ -32,7 +32,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/j69a7cum7pqm/",
     naverUrl: "https://naver.me/GgUe0vNy",
-    kakaoUrl: ""
+    kakaoUrl: "https://tworldfriends.co.kr/D634190013/subscribers/create"
   },
   {
     name: "용운점",
@@ -48,7 +48,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/5wc4p38gfuoy/",
     naverUrl: "https://naver.me/5ZjdrJ3Q",
-    kakaoUrl: ""
+    kakaoUrl: "https://tworldfriends.co.kr/D634190010/subscribers/create"
   },
   {
     name: "청주지웰시티점",
@@ -64,7 +64,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/bo2se7i65gii/",
     naverUrl: "https://naver.me/xUwgrDjt",
-    kakaoUrl: ""
+    kakaoUrl: "https://tworldfriends.co.kr/D634190015/subscribers/create"
   },
   {
     name: "아산권곡점",
@@ -80,7 +80,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
-    kakaoUrl: ""
+    kakaoUrl: "https://tworldfriends.co.kr/D634190012/subscribers/create"
   },
   {
     name: "아산세교점",
@@ -92,7 +92,9 @@ const stores = [
     phone: "0507-1338-8200",
     mapUrl: "https://naver.me/FG3plz6q",
     review: "직원분들도 너무 친절하고, 다양한 참여 혜택이 많아서 재밌고 만족스러웠어요 👍",
-    meta: "30대 여 / 가족 인터넷+티비 상담"
+    meta: "30대 여 / 가족 인터넷+티비 상담",
+
+    kakaoUrl: "https://tworldfriends.co.kr/D634190014/subscribers/create"
   },
   {
     name: "천안신불당점",
@@ -104,7 +106,9 @@ const stores = [
     phone: "0507-1417-0338",
     mapUrl: "https://naver.me/FBaVF2Gg",
     review: "조건 알아보기 복잡했는데, 쉽게 설명해주셔서 바로 결정할 수 있었어요!",
-    meta: "20대 남 / 대학생"
+    meta: "20대 남 / 대학생",
+
+    kakaoUrl: "https://tworldfriends.co.kr/D634190011/subscribers/create"
   },
   {
     name: "홍성서우점",
@@ -116,7 +120,9 @@ const stores = [
     phone: "0507-1425-3009",
     mapUrl: "https://naver.me/x58PthN3",
     review: "필름/케이스를 계속 교체해주고, 주기적으로 요금제 점검도 해줘서 관리 받고 있다는 느낌이 확 들어요👍",
-    meta: "50대 부부 고객"
+    meta: "50대 부부 고객",
+
+    kakaoUrl: "https://tworldfriends.co.kr/D634190008/subscribers/create"
   }
 ];
 
