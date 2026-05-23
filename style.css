@@ -2468,6 +2468,10 @@ span[style*="color: #ffffff"] {
   background: linear-gradient(180deg, #fee500 0%, #f7db00 100%);
   color: #181600;
 }
+.store-contact__item--tworld .store-contact__icon {
+  background: linear-gradient(180deg, #fee500 0%, #f7db00 100%);
+  color: #181600;
+}
 
 @media (max-width: 820px) {
   .store-contact__list {
