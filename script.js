@@ -16,7 +16,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/nj35pauscpaq/",
     naverUrl: "https://naver.me/Glmu4Q66",
-    tworldUrl: "https://tworldfriends.co.kr/D634190000/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190000/subscribers/create"
   },
   {
     name: "용문점",
@@ -32,7 +32,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/j69a7cum7pqm/",
     naverUrl: "https://naver.me/GgUe0vNy",
-    tworldUrl: "https://tworldfriends.co.kr/D634190013/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190013/subscribers/create"
   },
   {
     name: "용운점",
@@ -48,7 +48,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/5wc4p38gfuoy/",
     naverUrl: "https://naver.me/5ZjdrJ3Q",
-    tworldUrl: "https://tworldfriends.co.kr/D634190010/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190010/subscribers/create"
   },
   {
     name: "청주지웰시티점",
@@ -64,7 +64,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/bo2se7i65gii/",
     naverUrl: "https://naver.me/xUwgrDjt",
-    tworldUrl: "https://tworldfriends.co.kr/D634190015/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190015/subscribers/create"
   },
   {
     name: "아산권곡점",
@@ -80,7 +80,7 @@ const stores = [
 
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
-    tworldUrl: "https://tworldfriends.co.kr/D634190012/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190012/subscribers/create"
   },
   {
     name: "아산세교점",
@@ -94,7 +94,7 @@ const stores = [
     review: "직원분들도 너무 친절하고, 다양한 참여 혜택이 많아서 재밌고 만족스러웠어요 👍",
     meta: "30대 여 / 가족 인터넷+티비 상담",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190014/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190014/subscribers/create"
   },
   {
     name: "천안신불당점",
@@ -108,7 +108,7 @@ const stores = [
     review: "조건 알아보기 복잡했는데, 쉽게 설명해주셔서 바로 결정할 수 있었어요!",
     meta: "20대 남 / 대학생",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190011/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190011/subscribers/create"
   },
   {
     name: "홍성서우점",
@@ -122,7 +122,7 @@ const stores = [
     review: "필름/케이스를 계속 교체해주고, 주기적으로 요금제 점검도 해줘서 관리 받고 있다는 느낌이 확 들어요👍",
     meta: "50대 부부 고객",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190008/subscribers/create"
+    kakaoUrl: "https://tworldfriends.co.kr/D634190008/subscribers/create"
   }
 ];
 
@@ -400,12 +400,12 @@ function renderStores(list) {
               </a>
             ` : ""}
         
-            ${store.kakaoUrl ? `
-              <a class="store-contact__item store-contact__item--kakao" href="${store.kakaoUrl}" target="_blank" rel="noopener">
+            ${store.tworldUrl ? `
+              <a class="store-contact__item store-contact__item--tworld" href="${store.tworldUrl}" target="_blank" rel="noopener">
                 <span class="store-contact__icon">
-                  <img src="icons/kakao.png" alt="카카오" />
+                  <img src="icons/tworld.png" alt="친구등록" />
                 </span>
-                <span class="store-contact__label">카카오</span>
+                <span class="store-contact__label">친구등록</span>
               </a>
             ` : ""}
           </div>
