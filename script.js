@@ -81,49 +81,49 @@ const stores = [
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
     tworldUrl: "https://tworldfriends.co.kr/D634190012/subscribers/create"
-  },
-  {
-    name: "아산세교점",
-    lat: 36.77842747205894,
-    lng: 127.09468261095023,
-    image: "assets/segyo.jpg",
-    address: "충남 아산시 배방읍 세교리 1585(동방로 180-3)",
-    points: ["건물 뒷편 공영주차장 이용 가능"],
-    phone: "0507-1338-8200",
-    mapUrl: "https://naver.me/FG3plz6q",
-    review: "직원분들도 너무 친절하고, 다양한 참여 혜택이 많아서 재밌고 만족스러웠어요 👍",
-    meta: "30대 여 / 가족 인터넷+티비 상담",
+  // },
+  // {
+  //   name: "아산세교점",
+  //   lat: 36.77842747205894,
+  //   lng: 127.09468261095023,
+  //   image: "assets/segyo.jpg",
+  //   address: "충남 아산시 배방읍 세교리 1585(동방로 180-3)",
+  //   points: ["건물 뒷편 공영주차장 이용 가능"],
+  //   phone: "0507-1338-8200",
+  //   mapUrl: "https://naver.me/FG3plz6q",
+  //   review: "직원분들도 너무 친절하고, 다양한 참여 혜택이 많아서 재밌고 만족스러웠어요 👍",
+  //   meta: "30대 여 / 가족 인터넷+티비 상담",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190014/subscribers/create"
-  },
-  {
-    name: "천안신불당점",
-    lat: 36.812545972193035,
-    lng: 127.10779200242035,
-    image: "assets/shinbuldang.jpg",
-    address: "충남 천안시 서북구 불당동 1617(불당33길 26)",
-    points: ["건물 무료주차 1시간 제공"],
-    phone: "0507-1417-0338",
-    mapUrl: "https://naver.me/FBaVF2Gg",
-    review: "조건 알아보기 복잡했는데, 쉽게 설명해주셔서 바로 결정할 수 있었어요!",
-    meta: "20대 남 / 대학생",
+  //   tworldUrl: "https://tworldfriends.co.kr/D634190014/subscribers/create"
+  // },
+  // {
+  //   name: "천안신불당점",
+  //   lat: 36.812545972193035,
+  //   lng: 127.10779200242035,
+  //   image: "assets/shinbuldang.jpg",
+  //   address: "충남 천안시 서북구 불당동 1617(불당33길 26)",
+  //   points: ["건물 무료주차 1시간 제공"],
+  //   phone: "0507-1417-0338",
+  //   mapUrl: "https://naver.me/FBaVF2Gg",
+  //   review: "조건 알아보기 복잡했는데, 쉽게 설명해주셔서 바로 결정할 수 있었어요!",
+  //   meta: "20대 남 / 대학생",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190011/subscribers/create"
-  },
-  {
-    name: "홍성서우점",
-    lat: 36.599560738985524,
-    lng: 126.65209552343222,
-    image: "assets/seowoo.jpg",
-    address: "충남 홍성군 홍성읍 월산리 896-5(법원로 7)",
-    points: ["매장 앞 무료주차 가능"],
-    phone: "0507-1425-3009",
-    mapUrl: "https://naver.me/x58PthN3",
-    review: "필름/케이스를 계속 교체해주고, 주기적으로 요금제 점검도 해줘서 관리 받고 있다는 느낌이 확 들어요👍",
-    meta: "50대 부부 고객",
+  //   tworldUrl: "https://tworldfriends.co.kr/D634190011/subscribers/create"
+  // },
+  // {
+  //   name: "홍성서우점",
+  //   lat: 36.599560738985524,
+  //   lng: 126.65209552343222,
+  //   image: "assets/seowoo.jpg",
+  //   address: "충남 홍성군 홍성읍 월산리 896-5(법원로 7)",
+  //   points: ["매장 앞 무료주차 가능"],
+  //   phone: "0507-1425-3009",
+  //   mapUrl: "https://naver.me/x58PthN3",
+  //   review: "필름/케이스를 계속 교체해주고, 주기적으로 요금제 점검도 해줘서 관리 받고 있다는 느낌이 확 들어요👍",
+  //   meta: "50대 부부 고객",
 
-    tworldUrl: "https://tworldfriends.co.kr/D634190008/subscribers/create"
-  }
+  //   tworldUrl: "https://tworldfriends.co.kr/D634190008/subscribers/create"
+  // }
 ];
 
 const storeGrid = document.getElementById('storeGrid');
