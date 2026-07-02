@@ -81,7 +81,7 @@ const stores = [
     carrotUrl: "https://www.daangn.com/kr/local-profile/iutk11xfiu5b/",
     naverUrl: "https://naver.me/50JGTvtn",
     tworldUrl: "https://tworldfriends.co.kr/D634190012/subscribers/create"
-  // },
+  }
   // {
   //   name: "아산세교점",
   //   lat: 36.77842747205894,
