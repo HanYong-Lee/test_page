@@ -941,11 +941,92 @@ function animateVisitorCount(target) {
    카카오 문의 버튼
 ========================= */
 
-const floatingMessageBtn = document.getElementById('floatingMessageBtn');
+// const floatingMessageBtn = document.getElementById('floatingMessageBtn');
 
-floatingMessageBtn?.addEventListener('click', () => {
-  window.open(
-    'https://pf.kakao.com/_VRvxbX',
-    '_blank'
-  );
+// floatingMessageBtn?.addEventListener('click', () => {
+//   window.open(
+//     'https://pf.kakao.com/_VRvxbX',
+//     '_blank'
+//   );
+// });
+
+/* =========================
+   폴더블8 매장별 예약 팝업
+========================= */
+
+const floatingFoldableBtn =
+  document.getElementById('floatingFoldableBtn');
+
+const foldableBookingPopup =
+  document.getElementById('foldableBookingPopup');
+
+const foldableBookingBackdrop =
+  document.getElementById('foldableBookingBackdrop');
+
+const foldableBookingClose =
+  document.getElementById('foldableBookingClose');
+
+
+function openFoldableBookingPopup() {
+  if (!foldableBookingPopup) return;
+
+  foldableBookingPopup.classList.add('is-open');
+  foldableBookingPopup.setAttribute('aria-hidden', 'false');
+
+  document.body.classList.add('is-foldable-popup-open');
+
+  trackCTA('foldable8_popup_open');
+}
+
+
+function closeFoldableBookingPopup() {
+  if (!foldableBookingPopup) return;
+
+  foldableBookingPopup.classList.remove('is-open');
+  foldableBookingPopup.setAttribute('aria-hidden', 'true');
+
+  document.body.classList.remove('is-foldable-popup-open');
+}
+
+
+floatingFoldableBtn?.addEventListener('click', () => {
+  openFoldableBookingPopup();
 });
+
+
+foldableBookingClose?.addEventListener('click', () => {
+  closeFoldableBookingPopup();
+  trackCTA('foldable8_popup_close');
+});
+
+
+foldableBookingBackdrop?.addEventListener('click', () => {
+  closeFoldableBookingPopup();
+  trackCTA('foldable8_popup_backdrop_close');
+});
+
+
+document.addEventListener('keydown', (event) => {
+  if (
+    event.key === 'Escape' &&
+    foldableBookingPopup?.classList.contains('is-open')
+  ) {
+    closeFoldableBookingPopup();
+    trackCTA('foldable8_popup_escape_close');
+  }
+});
+
+
+document
+  .querySelectorAll('.foldable-booking-card')
+  .forEach((bookingCard) => {
+    bookingCard.addEventListener('click', () => {
+      const storeName =
+        bookingCard.dataset.storeName || 'unknown';
+
+      trackCTA('foldable8_booking_click', {
+        storeName,
+        target: bookingCard.href
+      });
+    });
+  });
