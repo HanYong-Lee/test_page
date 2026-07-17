@@ -2493,3 +2493,336 @@ span[style*="color: #ffffff"] {
     font-size: 11px;
   }
 }
+
+/* =====================================
+   폴더블8 문의 퀵버튼
+===================================== */
+
+.floating-quick__btn--foldable {
+  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #111827 0%,
+      #312e81 48%,
+      #7c3aed 100%
+    );
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow:
+    0 12px 28px rgba(76,29,149,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.16);
+}
+
+.floating-quick__btn--foldable:hover {
+  box-shadow:
+    0 16px 34px rgba(76,29,149,0.38),
+    inset 0 1px 0 rgba(255,255,255,0.20);
+}
+
+
+/* =====================================
+   폴더블8 매장 예약 팝업
+===================================== */
+
+.foldable-booking-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.24s ease,
+    visibility 0.24s ease;
+}
+
+.foldable-booking-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.foldable-booking-popup__backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(15,23,42,0.58);
+  backdrop-filter: blur(8px);
+}
+
+.foldable-booking-popup__dialog {
+  position: relative;
+  z-index: 1;
+
+  width: min(720px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+
+  padding: 34px;
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at right top,
+      rgba(124,58,237,0.12),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7f8ff 100%
+    );
+
+  border: 1px solid rgba(99,102,241,0.16);
+
+  box-shadow:
+    0 32px 90px rgba(15,23,42,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+
+  transform: translateY(18px) scale(0.98);
+
+  transition: transform 0.24s ease;
+}
+
+.foldable-booking-popup.is-open
+.foldable-booking-popup__dialog {
+  transform: translateY(0) scale(1);
+}
+
+.foldable-booking-popup__close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+
+  color: #475569;
+  background: rgba(241,245,249,0.94);
+
+  font-size: 17px;
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.foldable-booking-popup__close:hover {
+  transform: rotate(5deg);
+  background: #e2e8f0;
+}
+
+.foldable-booking-popup__head {
+  padding-right: 46px;
+  margin-bottom: 26px;
+}
+
+.foldable-booking-popup__eyebrow {
+  display: inline-flex;
+
+  margin-bottom: 10px;
+  padding: 7px 11px;
+
+  border-radius: 999px;
+
+  color: #6d28d9;
+  background: #f3e8ff;
+  border: 1px solid #e9d5ff;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.foldable-booking-popup__head h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(25px, 4vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+.foldable-booking-popup__head p {
+  margin: 12px 0 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+
+/* 데스크톱: 윗줄 3개, 아랫줄 2개 */
+.foldable-booking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.foldable-booking-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  min-height: 126px;
+  padding: 20px;
+
+  border-radius: 20px;
+
+  color: #0f172a;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(148,163,184,0.24);
+
+  box-shadow: 0 10px 24px rgba(15,23,42,0.06);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.foldable-booking-card:hover {
+  transform: translateY(-3px);
+
+  background: #ffffff;
+  border-color: rgba(124,58,237,0.35);
+
+  box-shadow:
+    0 16px 32px rgba(76,29,149,0.12);
+}
+
+.foldable-booking-card__name {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+
+.foldable-booking-card__action {
+  color: #7c3aed;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.foldable-booking-popup__notice {
+  margin: 20px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+
+/* 팝업이 열렸을 때 배경 스크롤 방지 */
+body.is-foldable-popup-open {
+  overflow: hidden;
+}
+
+
+/* =====================================
+   모바일
+===================================== */
+
+@media (max-width: 820px) {
+  .foldable-booking-popup {
+    padding: 14px;
+  }
+
+  .foldable-booking-popup__dialog {
+    width: 100%;
+    max-height: calc(100vh - 28px);
+
+    padding: 26px 18px 20px;
+    border-radius: 24px;
+  }
+
+  .foldable-booking-popup__close {
+    top: 12px;
+    right: 12px;
+
+    width: 36px;
+    height: 36px;
+  }
+
+  .foldable-booking-popup__head {
+    padding-right: 38px;
+    margin-bottom: 20px;
+  }
+
+  .foldable-booking-popup__head h2 {
+    font-size: 25px;
+  }
+
+  /* 모바일에서는 가독성을 위해 2열 */
+  .foldable-booking-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .foldable-booking-card {
+    min-height: 108px;
+    padding: 16px;
+    border-radius: 17px;
+  }
+
+  .foldable-booking-card__name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .foldable-booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foldable-booking-card {
+    min-height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 821px) {
+  .foldable-booking-card:nth-child(4) {
+    grid-column: 1 / 2;
+    transform: translateX(50%);
+  }
+
+  .foldable-booking-card:nth-child(5) {
+    grid-column: 2 / 3;
+    transform: translateX(50%);
+  }
+
+  .foldable-booking-card:nth-child(4):hover,
+  .foldable-booking-card:nth-child(5):hover {
+    transform: translateX(50%) translateY(-3px);
+  }
+}
